@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="admindistribution.com.admindistribution">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="admindistribution.com.admindistribution.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="admindistribution.com.admindistribution.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="admindistribution.com.admindistribution.MainActivity" />
+        <activity
+            android:name="admindistribution.com.admindistribution.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.HomeActivity"
+            android:label="Home" />
+        <activity
+            android:name="admindistribution.com.admindistribution.AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.DealerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.SalesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.RedeemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.ScanActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- <service -->
+        <!-- android:name=".MyNotificationExtenderService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.onesignal.NotificationExtender" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+        <activity
+            android:name="admindistribution.com.admindistribution.Userpointredeem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.Actphone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.ScanActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.ShopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="admindistribution.com.admindistribution.ClaimpointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.UserprofileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.DealerprofileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.SaleslistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.AddsalesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.HistoryclaimActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.DealersaleshistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.ManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.Manual2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.AdddealerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.DealerlistActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="admindistribution.com.admindistribution.AdminlistActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="admindistribution.com.admindistribution.NotifActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.ApprovepoinActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.ApproveshopActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.EditdealerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.ProductlistActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.AddproductActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.EditproductActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.ActivationlistActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.AddactivationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.EditactivationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.ShoplistActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.AddshopActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.EditshopActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.SettinglistActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="admindistribution.com.admindistribution.SettingadminActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+    </application>
+
+</manifest>

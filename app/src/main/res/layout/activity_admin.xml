@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context="distribution.com.admindistribution.AdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/bgdealer"
+            />
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/bar" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constrain1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="164dp"
+                android:src="@drawable/select"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="148dp"
+                android:text="Nama Akun"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="160dp"
+                android:text="nama"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textrole"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Admin"
+                android:textColor="#ffc32e"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textname" />
+
+            <ImageView
+                android:id="@+id/gambarnotif"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/notif"
+                app:layout_constraintEnd_toStartOf="@+id/textnotif"
+                app:layout_constraintTop_toBottomOf="@+id/textname" />
+
+            <TextView
+                android:id="@+id/textnotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="@+id/textname"
+                app:layout_constraintTop_toBottomOf="@+id/textname" />
+
+            <Button
+                android:id="@+id/buttonRedeem"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/btnmanuser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select" />
+
+            <Button
+                android:id="@+id/btnValidate"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="436dp"
+                android:background="@drawable/btnadmin"
+                app:layout_constraintEnd_toStartOf="@+id/buttonClaims"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonClaims"
+                android:layout_width="95dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="436dp"
+                android:background="@drawable/btnapppoint"
+                app:layout_constraintEnd_toStartOf="@+id/buttonShops"
+                app:layout_constraintStart_toEndOf="@+id/btnValidate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonShops"
+                android:layout_width="95dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="436dp"
+                android:background="@drawable/btnappshop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonClaims"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnsetting"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btnmanageshop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnClaimHistory"
+                app:layout_constraintTop_toBottomOf="@+id/buttonShops" />
+
+            <Button
+                android:id="@+id/btnSalesHistory"
+                android:layout_width="96dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btnmanagepro"
+                app:layout_constraintEnd_toStartOf="@+id/btnClaimHistory"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnValidate" />
+
+            <Button
+                android:id="@+id/btnClaimHistory"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btnmanageact"
+                app:layout_constraintEnd_toStartOf="@+id/btnsetting"
+                app:layout_constraintStart_toEndOf="@+id/btnSalesHistory"
+                app:layout_constraintTop_toBottomOf="@+id/buttonClaims" />
+
+            <Button
+                android:id="@+id/btnsettingadmin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="137dp"
+                android:layout_marginStart="147dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/btnsettings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnClaimHistory" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+</ScrollView>
